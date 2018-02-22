@@ -21,4 +21,11 @@ public class HelloWorldController {
 		model.addAttribute("message", "Welcome Again from Spring MVC");
 		return "welcome";
 	}
+	
+	@RequestMapping(value="/helloWorld",method=RequestMethod.GET)
+	public String sayHelloWorld(ModelMap model)
+	{
+		model.addAttribute("message", "Welcome Hello World from Spring MVC");
+		return "welcome";
+	}
 }
